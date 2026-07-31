@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="NIRUNE is a private-first music application for Windows and Android."
+      content="NIRUNE is a music application for Windows and Android that unifies local audio files and connected music catalogs in one interface."
     />
+    <meta name="application-name" content="NIRUNE" />
     <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://nirune.site/" />
     <meta property="og:title" content="NIRUNE" />
+    <meta property="og:site_name" content="NIRUNE" />
     <meta
       property="og:description"
-      content="A private-first music application for local files and connected catalogs."
+      content="A music application for Windows and Android that brings local files and connected catalogs into one interface."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://nirune.is-a.dev/assets/logo.png" />
+    <meta property="og:url" content="https://nirune.site/" />
+    <meta property="og:image" content="https://nirune.site/assets/logo.png" />
     <title>NIRUNE</title>
     <link rel="icon" href="assets/logo.png" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "NIRUNE",
+        "url": "https://nirune.site/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Windows, Android",
+        "description": "NIRUNE is a music application for Windows and Android that unifies local audio files and connected music catalogs in one interface."
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -38,11 +53,22 @@
     <main id="main" class="page">
       <section class="intro" aria-labelledby="title">
         <img class="intro-logo" src="assets/logo.png" alt="NIRUNE logo" />
-        <span class="status">Private preview</span>
+        <span class="status">Music application · Private preview</span>
         <h1 id="title">NIRUNE</h1>
         <p class="lead">
-          A private-first music application for Windows and Android. NIRUNE brings
-          local music and connected provider catalogs into one interface.
+          NIRUNE is a music application for Windows and Android. It brings local
+          audio files and music catalogs connected by the user into one interface.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="purpose-title">
+        <h2 id="purpose-title">What is NIRUNE?</h2>
+        <p>
+          The purpose of NIRUNE is to provide one place to browse, search, organize,
+          and play music from supported sources. Users can add local music folders,
+          play local tracks, connect Google through OAuth, and search the official
+          YouTube catalog. Provider capabilities remain clearly identified so the
+          application only offers actions that each connected source supports.
         </p>
       </section>
 

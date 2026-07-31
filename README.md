@@ -3,8 +3,7 @@
 Static product and OAuth verification website for NIRUNE.
 
 The site is intentionally dependency-free and contains no analytics or tracking
-scripts. GitHub Pages publishes the `main` branch. The intended custom domain is
-`nirune.is-a.dev`.
+scripts. GitHub Pages publishes the `main` branch at `https://nirune.site/`.
 
 ## Pages
 

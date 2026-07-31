@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nirune.is-a.dev/sitemap.xml
+Sitemap: https://nirune.site/sitemap.xml
