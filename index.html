@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="NIRUNE is a private-first music application for Windows and Android, bringing local music and connected catalogs into one focused experience."
+      content="NIRUNE is a private-first music application for Windows and Android."
     />
-    <meta name="theme-color" content="#06070b" />
-    <meta property="og:title" content="NIRUNE — Your music, one place" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="NIRUNE" />
     <meta
       property="og:description"
-      content="A private-first music application for local files and connected music catalogs."
+      content="A private-first music application for local files and connected catalogs."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://nirune.is-a.dev/assets/logo.png" />
-    <title>NIRUNE — Your music, one place</title>
+    <title>NIRUNE</title>
     <link rel="icon" href="assets/logo.png" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
@@ -28,96 +28,67 @@
           <span>NIRUNE</span>
         </a>
         <div class="nav-links">
-          <a href="#product">Product</a>
-          <a href="#privacy">Privacy</a>
-          <a href="privacy/">Privacy policy</a>
+          <a href="mailto:slcrmmbr@gmail.com">Support</a>
+          <a href="privacy/">Privacy</a>
+          <a href="terms/">Terms</a>
         </div>
       </nav>
     </header>
 
     <main id="main" class="page">
-      <section class="hero" aria-labelledby="hero-title">
-        <div>
-          <span class="eyebrow">Private preview</span>
-          <h1 id="hero-title">Your music. <span class="gradient-text">One place.</span></h1>
-          <p class="lead">
-            NIRUNE is a music application for Windows and Android that brings local
-            music and connected provider catalogs into one calm, source-aware
-            experience.
-          </p>
-          <div class="actions">
-            <a class="button primary" href="#product">See what we are building</a>
-            <a class="button" href="privacy/">How NIRUNE handles data</a>
-          </div>
-        </div>
-        <div class="hero-mark" aria-hidden="true">
-          <img src="assets/logo.png" alt="" />
-        </div>
+      <section class="intro" aria-labelledby="title">
+        <img class="intro-logo" src="assets/logo.png" alt="NIRUNE logo" />
+        <span class="status">Private preview</span>
+        <h1 id="title">NIRUNE</h1>
+        <p class="lead">
+          A private-first music application for Windows and Android. NIRUNE brings
+          local music and connected provider catalogs into one interface.
+        </p>
       </section>
 
-      <section id="product" class="section" aria-labelledby="product-title">
-        <div class="section-heading">
-          <span class="status">In development</span>
-          <h2 id="product-title">A player built around the listener.</h2>
-          <p>
-            The current Windows prototype supports local-library playback and an
-            official Google connection for user-initiated YouTube catalog search.
-            Additional provider capabilities are added only when they can be kept
-            isolated, honest, and replaceable.
-          </p>
-        </div>
+      <section class="section" aria-labelledby="current-title">
+        <h2 id="current-title">Current functionality</h2>
         <div class="grid">
           <article class="card">
             <span class="card-number">01</span>
-            <h3>One search surface</h3>
-            <p>Explore local music and available connected catalogs without treating every source as a separate app.</p>
+            <h3>Local music</h3>
+            <p>Add folders, search your local library, and play audio files on Windows.</p>
           </article>
           <article class="card">
             <span class="card-number">02</span>
-            <h3>Source-aware playback</h3>
-            <p>NIRUNE shows where a track comes from and only offers playback when an authorized source can resolve it.</p>
+            <h3>Connected catalogs</h3>
+            <p>Connect Google through OAuth and submit explicit searches to the official YouTube Data API.</p>
           </article>
           <article class="card">
             <span class="card-number">03</span>
-            <h3>Private by default</h3>
-            <p>Your library stays on your device. Provider credentials are kept in platform-secure storage, away from the interface.</p>
+            <h3>Source-aware design</h3>
+            <p>Online playback is offered only when an authorized provider source supports it.</p>
           </article>
         </div>
       </section>
 
-      <section id="privacy" class="section" aria-labelledby="privacy-title">
-        <div class="trust-panel">
-          <div>
-            <span class="eyebrow">Trust by design</span>
-            <h2 id="privacy-title">Your account is not our product.</h2>
-          </div>
-          <ul>
-            <li><strong>No NIRUNE advertising or analytics.</strong><br /><span class="muted">The public site contains no tracking scripts.</span></li>
-            <li><strong>No NIRUNE cloud account today.</strong><br /><span class="muted">The preview stores its library and connected sessions on the device.</span></li>
-            <li><strong>Disconnect means disconnect.</strong><br /><span class="muted">Removing Google from NIRUNE deletes its saved OAuth credential from secure local storage.</span></li>
-          </ul>
-        </div>
+      <section class="section" aria-labelledby="data-title">
+        <h2 id="data-title">Data and privacy</h2>
+        <p class="muted">
+          The preview has no NIRUNE cloud account or analytics service. Library data
+          and provider credentials remain on the device. Google credentials are kept
+          in platform-secure storage and deleted from NIRUNE when the provider is disconnected.
+        </p>
+        <p><a href="privacy/">Read the Privacy Policy</a></p>
       </section>
 
       <section class="section" aria-labelledby="availability-title">
-        <div class="section-heading">
-          <span class="status">Private preview</span>
-          <h2 id="availability-title">Not ready for download yet.</h2>
-          <p>
-            NIRUNE is undergoing provider, security, and cross-platform testing.
-            This website documents the product and its data practices; it does not
-            advertise a finished public release.
-          </p>
-          <div class="actions">
-            <a class="button" href="mailto:slcrmmbr@gmail.com">Contact support</a>
-          </div>
-        </div>
+        <h2 id="availability-title">Availability</h2>
+        <p class="muted">
+          NIRUNE is under development and is not available as a public download yet.
+          This website documents the product and its data practices.
+        </p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="site-footer-inner">
-        <span>© 2026 NIRUNE. Private preview.</span>
+        <span>© 2026 NIRUNE</span>
         <div class="footer-links">
           <a href="privacy/">Privacy</a>
           <a href="terms/">Terms</a>
