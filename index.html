@@ -71,9 +71,9 @@
         <p>
           The purpose of NIRUNE is to provide one place to browse, search, organize,
           and play music from supported sources. Users can add local music folders,
-          play local tracks, connect Google through OAuth, and search the official
-          YouTube catalog. Provider capabilities remain clearly identified so the
-          application only offers actions that each connected source supports.
+          play local tracks, and connect supported providers through protected
+          first-party web sessions. Provider capabilities remain clearly identified
+          so the application only offers actions that each connected source supports.
         </p>
       </section>
 
@@ -88,7 +88,7 @@
           <article class="card">
             <span class="card-number">02</span>
             <h3>Connected catalogs</h3>
-            <p>Connect Google through OAuth and submit explicit searches to the official YouTube Data API.</p>
+            <p>Connect YouTube, YouTube Music, and Yandex Music through protected in-app provider sessions.</p>
           </article>
           <article class="card">
             <span class="card-number">03</span>
@@ -102,26 +102,24 @@
         <h2 id="data-title">Data and privacy</h2>
         <p class="muted">
           The preview has no NIRUNE cloud account or analytics service. Library data
-          and provider credentials remain on the device. Google credentials are kept
-          in platform-secure storage and deleted from NIRUNE when the provider is disconnected.
+          and provider sessions remain on the device. Session data is kept in
+          platform-protected storage and deleted from NIRUNE when the provider is disconnected.
         </p>
         <p><a href="privacy/">Read the Privacy Policy</a></p>
       </section>
 
-      <section class="section" aria-labelledby="google-data-title">
-        <h2 id="google-data-title">How NIRUNE uses Google user data</h2>
+      <section class="section" aria-labelledby="provider-data-title">
+        <h2 id="provider-data-title">How NIRUNE uses provider sessions</h2>
         <p>
-          Connecting Google is optional and starts only when the user selects
-          <strong>Connect Google</strong>. NIRUNE requests basic Google profile and
-          email information to identify the connected account. It requests read-only
-          YouTube access through <code>youtube.readonly</code> to send catalog searches
-          explicitly submitted by the user and display the resulting YouTube metadata
-          inside NIRUNE.
+          Connecting a provider is optional and starts only when the user opens its
+          sign-in page inside NIRUNE. The provider creates its ordinary first-party
+          web session. NIRUNE uses that session for the account, catalog, library,
+          playlist, and playback capabilities available to that account and region.
         </p>
         <p>
-          NIRUNE does not create, modify, or delete YouTube data. Google credentials
-          are stored in platform-secure storage on the user's device and are deleted
-          from NIRUNE when the user disconnects Google. The
+          NIRUNE does not use Google OAuth or the YouTube Data API. Protected session
+          data is stored on the user's device and copied only into authenticated
+          loopback helpers in memory while the application is running. The
           <a href="privacy/">NIRUNE Privacy Policy</a> describes access, use,
           retention, sharing, and deletion in detail.
         </p>

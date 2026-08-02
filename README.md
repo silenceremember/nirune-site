@@ -1,14 +1,15 @@
 # NIRUNE website
 
-Static product and OAuth verification website for NIRUNE.
+Static product, privacy, and terms website for NIRUNE.
 
 The site is intentionally dependency-free and contains no analytics or tracking
-scripts. GitHub Pages publishes the `main` branch at `https://nirune.site/`.
+scripts. The canonical deployment is `https://nirune.site/`; publish this
+directory without a build step.
 
 ## Pages
 
 - `/` — product homepage
-- `/privacy/` — privacy policy and Google user-data disclosure
+- `/privacy/` — privacy and provider-session disclosure
 - `/terms/` — terms of service
 
 ## Local preview

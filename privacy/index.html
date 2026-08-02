@@ -27,7 +27,7 @@
     </header>
 
     <main id="main" class="page legal">
-      <span class="eyebrow">Effective July 31, 2026</span>
+      <span class="eyebrow">Effective August 2, 2026</span>
       <h1>Privacy Policy</h1>
       <p class="legal-intro">
         This policy explains how NIRUNE accesses, uses, stores, and shares data.
@@ -37,30 +37,30 @@
 
       <div class="notice">
         The current preview has no NIRUNE-operated cloud account or analytics
-        service. Google credentials and application-library data remain on the
+        service. Provider sessions and application-library data remain on the
         user's device unless this policy explicitly states otherwise.
       </div>
 
       <h2>1. Data NIRUNE accesses</h2>
-      <h3>Google account and YouTube data</h3>
-      <p>When you choose to connect Google, NIRUNE requests the following OAuth permissions:</p>
-      <ul>
-        <li>basic Google profile information and email address;</li>
-        <li>read-only YouTube access through <code>youtube.readonly</code>.</li>
-      </ul>
+      <h3>Provider sessions and catalog data</h3>
       <p>
-        The current preview uses the authorized Google session to establish the
-        connected provider and to perform YouTube catalog searches only after the
-        user explicitly submits a query. NIRUNE does not use this permission to
-        create, modify, or delete YouTube data.
+        When you choose to connect YouTube, YouTube Music, or Yandex Music, NIRUNE
+        opens the provider's first-party sign-in page inside a protected in-app web
+        session. The provider may set ordinary session cookies and return account,
+        subscription, catalog, library, playlist, and playback data available to
+        that account and region. Online searches are submitted only after an
+        explicit user action.
       </p>
 
-      <h3>OAuth credentials</h3>
+      <h3>Session credentials</h3>
       <p>
-        Google issues access and refresh credentials after consent. NIRUNE stores
-        those credentials in platform-secure storage on your device. They are not
-        displayed in the interface, written to application logs, or sent to a
-        NIRUNE-operated server.
+        NIRUNE does not use Google OAuth or the YouTube Data API. Provider session
+        cookies are stored in platform-protected storage on your device. They are
+        not displayed in the interface, written to normal application logs, or sent
+        to a NIRUNE-operated cloud server. While NIRUNE is running, the minimum
+        session data needed for a request may be copied into authenticated local
+        helpers bound to <code>127.0.0.1</code>; those copies remain in memory and
+        are cleared when the helpers stop or the provider is disconnected.
       </p>
 
       <h3>Local music and application data</h3>
@@ -84,12 +84,12 @@
 
       <h2>3. Sharing and disclosure</h2>
       <p>
-        NIRUNE does not sell Google user data, local-library data, or listening
-        activity. It does not use Google user data for advertising. User-initiated
-        Google and YouTube requests are sent directly to Google's services and are
-        governed by Google's own privacy practices. Data may be disclosed only when
-        required by applicable law or necessary to protect users and the integrity
-        of the application.
+        NIRUNE does not sell provider-session data, local-library data, or listening
+        activity and does not use that data for advertising. User-initiated requests
+        are sent to the selected provider through local NIRUNE adapters and are
+        governed by that provider's privacy practices. Data may be disclosed only
+        when required by applicable law or necessary to protect users and the
+        integrity of the application.
       </p>
 
       <h2>4. Data retention and deletion</h2>
@@ -100,46 +100,39 @@
         uninstall it.
       </p>
       <p>
-        Selecting <strong>Disconnect</strong> for Google deletes the saved Google
-        OAuth credential from NIRUNE's secure local storage. You can also revoke
-        NIRUNE from your Google Account's connected-app settings. Because the
-        current preview operates without a NIRUNE account server, NIRUNE does not
-        retain a separate server-side copy of your Google user data.
+        Selecting <strong>Disconnect</strong> for a provider deletes its saved
+        session from NIRUNE's protected local storage and clears the in-memory
+        facade copy. You may also end the session through the provider's own account
+        controls. Because the current preview operates without a NIRUNE account
+        server, NIRUNE does not retain a separate cloud copy of provider data.
       </p>
 
       <h2>5. Security</h2>
       <p>
-        NIRUNE uses the system browser for Google authorization, a temporary
-        loopback callback on <code>127.0.0.1</code>, HTTPS for Google API requests,
-        and platform-secure credential storage. No method of storage is perfectly
+        NIRUNE uses protected in-app provider sessions, HTTPS for provider requests,
+        authenticated local services bound to <code>127.0.0.1</code>, and
+        platform-protected credential storage. NIRUNE does not disable TLS checks or
+        expose its local facade to the network. No method of storage is perfectly
         secure, but access is deliberately limited to the authentication adapter
         that needs it.
       </p>
 
-      <h2>6. Google API Services User Data Policy</h2>
-      <p>
-        NIRUNE's use and transfer of information received from Google APIs adheres
-        to the
-        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
-        including the Limited Use requirements.
-      </p>
-
-      <h2>7. Children</h2>
+      <h2>6. Children</h2>
       <p>
         NIRUNE is not directed to children under the minimum age required to manage
-        their own Google Account in their country. Do not connect an account if you
+        their own provider account in their country. Do not connect an account if you
         are not permitted to grant the requested access.
       </p>
 
-      <h2>8. Changes to this policy</h2>
+      <h2>7. Changes to this policy</h2>
       <p>
         This policy will be updated before NIRUNE introduces materially different
-        data collection, a managed synchronization service, new Google scopes, or
+        data collection, a managed synchronization service, new provider access, or
         new sharing practices. The effective date at the top will identify the
         latest revision.
       </p>
 
-      <h2>9. Contact</h2>
+      <h2>8. Contact</h2>
       <p>
         Questions, privacy requests, and security reports can be sent to
         <a href="mailto:slcrmmbr@gmail.com">slcrmmbr@gmail.com</a>.
